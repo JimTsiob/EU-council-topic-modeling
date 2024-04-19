@@ -1,0 +1,55 @@
+Thoughts on Q12 dataset: Να βάλουμε 'useful' kai 'useless' topics? idea gia topics apo synadelfous?
+Thoughts on Q11 dataset: use my own topics and add them to dataset by K-NN
+Thoughts on Q14 dataset: machine translation, language, website (<- topics)
+
+Q11 - sxetika kalo dataset, perieixe polles apanthseis me apopseis politikes kai mh.
+
+- if the answer contains the word search and IS of topic 4: add 'search engine' topic
+- if the answer contains the word email: add 'email' as the topic
+topics:
+
+suggestion - dinei elaxistes plhrofories , thelei exakrivwsh apo anthrwpo
+opinion - synithws einai gnwmes anthrwpwn , me apopseis gia diafora themata including kai to site.
+information - plhrofories gia to site kai thn EU genika
+translation - metafrash diaforwn pragmatwn panw sto site tou EU council
+search engine - otidhpote exei na kanei me to search engine tou site kai genika ta search functions
+website - otidhpote exei na kanei me to website.
+document - docs related apanthseis
+nothing - axrhstes entelws apanthseis.
+
+Q12 - dataset me arketes axrhstes plhrofories, perieixe kapoies kales apanthseis though
+
+- if answer is of topic 0 and does not contain the word information -> topic = 'nothing'
+
+eu -> 5 - periexei plhrofories gia thn EU kai to eu council
+website -> 7 - periexei XRHSIMES plhrofories gia thn istoselida
+politics -> 8 - periexei apanthseis me politiko periexomeno
+page -> 4 - periexei XRHSIMES plhrofories gia thn istoselida
+nothing -> 0,1,2,3 (0 if word information not contained) - axrhstes apanthseis
+information -> 0 (if word information is contained) - periexei plhrofories anagkaies apo xrhstes
+
+Q14 - kalo dataset me arketes apanthseis pou perieixan constructive feedback
+
+reliability -> 2 - apanthseis pou aforoun thn axiopistia tou machine translation.
+
+machine translation -> 6 - apanthseis pou aforoun to machine translation genika. Eite axiopistias, 
+eite empeiriwn xrhshs tou.
+
+content -> 5 - apanthseis pou aforoun to pws tha ephreasei to machine translation to periexomeno twn keimenwn.
+px an tha sygkratei lexeis , an tha tis allazei me kako tropo klp.
+
+human translation -> 0 - answers that support human translation in favor of machine translation.
+
+quality -> 3 - apanthseis pou aforoun thn poiothta tou machine translation stis metafraseis.
+
+ease of use -> 7 - answers that relate to ease of use of machine translation on the website and how it would 
+make the life of readers easier.
+
+understanding -> 8 - apanthseis pou aforoun thn katanohsh tou keimenou kai pws ayto tha tous voihtisei
+h tha tous krathsei pisw.
+
+language -> 1 - apanthseis pou aforoun themata me tis glwsses kai pws to machine translator 
+tha tis diaxeirizetai.
+
+information -> 4 - apanthseis pou aforoun tis plhrofories pou diaxeirizetai to machine translation.
+
